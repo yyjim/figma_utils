@@ -1,0 +1,469 @@
+{
+  "data": [
+    {
+      "name": "marielarica_2022_newyear",
+      "size": {
+        "width": 1080,
+        "height": 1920
+      },
+      "slot": {
+        "rect": {
+          "x": 29,
+          "y": 136,
+          "width": 1022,
+          "height": 1463
+        }
+      }
+    },
+    {
+      "name": "hny_multipage_sample",
+      "size": {
+        "width": 1080,
+        "height": 1920
+      },
+      "slot": {
+        "rect": {
+          "x": -188,
+          "y": -339,
+          "width": 1455,
+          "height": 1452
+        }
+      }
+    },
+    {
+      "name": "lauraheine_2021_newyear_2",
+      "size": {
+        "width": 1080,
+        "height": 1920
+      },
+      "slot": {
+        "rect": {
+          "x": 122,
+          "y": 225,
+          "width": 836,
+          "height": 1069
+        }
+      }
+    },
+    {
+      "name": "weirdoinpink_2021_theme_1",
+      "size": {
+        "width": 1350,
+        "height": 1800
+      },
+      "slot": {
+        "rect": {
+          "x": 312,
+          "y": 195,
+          "width": 731.0000610351562,
+          "height": 1234.425537109375
+        }
+      }
+    },
+    {
+      "name": "hny21_reupload_5",
+      "size": {
+        "width": 1200,
+        "height": 1800
+      },
+      "slot": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1200,
+          "height": 1800
+        }
+      }
+    },
+    {
+      "name": "hny21_reupload_1",
+      "size": {
+        "width": 1800,
+        "height": 1200
+      },
+      "slot": {
+        "rect": {
+          "x": 887,
+          "y": 0,
+          "width": 913,
+          "height": 1200
+        }
+      }
+    },
+    {
+      "name": "elifsahin_2022_ny1",
+      "size": {
+        "width": 1200,
+        "height": 1680
+      },
+      "slot": {
+        "rect": {
+          "x": 253,
+          "y": 255,
+          "width": 694,
+          "height": 1041
+        }
+      }
+    },
+    {
+      "name": "veralim_2022_nymulti4",
+      "size": {
+        "width": 1200,
+        "height": 1600
+      },
+      "slot": {
+        "rect": {
+          "x": 238,
+          "y": 260,
+          "width": 724,
+          "height": 856
+        }
+      }
+    },
+    {
+      "name": "5165",
+      "size": {
+        "width": 1800,
+        "height": 1800
+      },
+      "slot": {
+        "rect": {
+          "x": 219.96044921875,
+          "y": 219.96044921875,
+          "width": 1360.0791015625,
+          "height": 1360.0791015625
+        }
+      }
+    },
+    {
+      "name": "sarah_2022_party13",
+      "size": {
+        "width": 1440,
+        "height": 1800
+      },
+      "slot": {
+        "rect": {
+          "x": 175,
+          "y": 164,
+          "width": 1091,
+          "height": 1306
+        }
+      }
+    },
+    {
+      "name": "hny21_reupload_9",
+      "size": {
+        "width": 1080,
+        "height": 1920
+      },
+      "slot": {
+        "rect": {
+          "x": 138,
+          "y": 141,
+          "width": 804,
+          "height": 973
+        }
+      }
+    },
+    {
+      "name": "hny21_reupload_13",
+      "size": {
+        "width": 1080,
+        "height": 1920
+      },
+      "slot": {
+        "rect": {
+          "x": 178,
+          "y": 202,
+          "width": 733,
+          "height": 965
+        }
+      }
+    },
+    {
+      "name": "winnie_NY_02",
+      "size": {
+        "width": 1440,
+        "height": 1800
+      },
+      "slot": {
+        "rect": {
+          "x": 64.42578125,
+          "y": 290.501953125,
+          "width": 1311.1488037109375,
+          "height": 1218.9951171875
+        }
+      }
+    },
+    {
+      "name": "vip_nat_yearendreview_9x16_1",
+      "size": {
+        "width": 1080,
+        "height": 1920
+      },
+      "slot": {
+        "rect": {
+          "x": 194.79296875,
+          "y": 1373.541015625,
+          "width": 932.583740234375,
+          "height": 697.4003295898438
+        }
+      }
+    },
+    {
+      "name": "5164_recap_2021",
+      "size": {
+        "width": 1800,
+        "height": 1800
+      },
+      "slot": {
+        "rect": {
+          "x": 276,
+          "y": 823,
+          "width": 1249,
+          "height": 742
+        }
+      }
+    },
+    {
+      "name": "vip_naomi_2022_multinye",
+      "size": {
+        "width": 1440,
+        "height": 1800
+      },
+      "slot": {
+        "rect": {
+          "x": 168,
+          "y": 302,
+          "width": 1105,
+          "height": 1145
+        }
+      }
+    },
+    {
+      "name": "2125_Remake",
+      "size": {
+        "width": 1575,
+        "height": 2175
+      },
+      "slot": {
+        "rect": {
+          "x": 232,
+          "y": 283,
+          "width": 1111,
+          "height": 1603
+        }
+      }
+    },
+    {
+      "name": "inhouse_bulk_2023_watercolor_1",
+      "size": {
+        "width": 1286,
+        "height": 1800
+      },
+      "slot": {
+        "rect": {
+          "x": 183.4453125,
+          "y": 233.18359375,
+          "width": 919.9144287109375,
+          "height": 919.9144287109375
+        }
+      }
+    },
+    {
+      "name": "6895",
+      "size": {
+        "width": 1800,
+        "height": 1800
+      },
+      "slot": {
+        "rect": {
+          "x": 134,
+          "y": 180,
+          "width": 1533,
+          "height": 1441
+        }
+      }
+    },
+    {
+      "name": "1779_remake",
+      "size": {
+        "width": 2175,
+        "height": 1575
+      },
+      "slot": {
+        "rect": {
+          "x": 369,
+          "y": 220,
+          "width": 1508,
+          "height": 1047
+        }
+      }
+    },
+    {
+      "name": "wooden_2021_family_2",
+      "size": {
+        "width": 1200,
+        "height": 1800
+      },
+      "slot": {
+        "rect": {
+          "x": 164.5224609375,
+          "y": 422.216796875,
+          "width": 891.6273193359375,
+          "height": 891.6273193359375
+        }
+      }
+    },
+    {
+      "name": "Winnie_Christmas_2023_04",
+      "size": {
+        "width": 1440,
+        "height": 1800
+      },
+      "slot": {
+        "rect": {
+          "x": 100,
+          "y": 108,
+          "width": 1239,
+          "height": 1466
+        }
+      }
+    },
+    {
+      "name": "wooden2022_traditionalchristmas1",
+      "size": {
+        "width": 1800,
+        "height": 1800
+      },
+      "slot": {
+        "rect": {
+          "x": 222,
+          "y": 222,
+          "width": 1356,
+          "height": 1356
+        }
+      }
+    },
+    {
+      "name": "free_Naomi_ChristmasGreeting2022",
+      "size": {
+        "width": 1080,
+        "height": 1920
+      },
+      "slot": {
+        "rect": {
+          "x": 113,
+          "y": 149,
+          "width": 855,
+          "height": 930
+        }
+      }
+    },
+    {
+      "name": "1773_remake",
+      "size": {
+        "width": 1575,
+        "height": 2175
+      },
+      "slot": {
+        "rect": {
+          "x": -99,
+          "y": 764,
+          "width": 1855,
+          "height": 1303
+        }
+      }
+    },
+    {
+      "name": "6894_leticiaplate_2022_christmas2_20221004",
+      "size": {
+        "width": 1500,
+        "height": 1500
+      },
+      "slot": {
+        "rect": {
+          "x": 284,
+          "y": 279,
+          "width": 942,
+          "height": 942
+        }
+      }
+    },
+    {
+      "name": "1985_remake",
+      "size": {
+        "width": 1575,
+        "height": 2175
+      },
+      "slot": {
+        "rect": {
+          "x": 268,
+          "y": 213,
+          "width": 1039,
+          "height": 1296
+        }
+      }
+    },
+    {
+      "name": "6896",
+      "size": {
+        "width": 1350,
+        "height": 1800
+      },
+      "slot": {
+        "rect": {
+          "x": 110,
+          "y": 148,
+          "width": 1131,
+          "height": 1248
+        }
+      }
+    },
+    {
+      "name": "1973_remake",
+      "size": {
+        "width": 1200,
+        "height": 1680
+      },
+      "slot": {
+        "rect": {
+          "x": 152,
+          "y": 210,
+          "width": 896,
+          "height": 1106
+        }
+      }
+    },
+    {
+      "name": "PaolaBenenati_2023_InHarmony_6",
+      "size": {
+        "width": 1286,
+        "height": 1800
+      },
+      "slot": {
+        "rect": {
+          "x": 244,
+          "y": 245,
+          "width": 808,
+          "height": 1135
+        }
+      }
+    },
+    {
+      "name": "Naomi_2023_Christmas_02",
+      "size": {
+        "width": 1286,
+        "height": 1800
+      },
+      "slot": {
+        "rect": {
+          "x": 229.05859375,
+          "y": 360.7734375,
+          "width": 827.8828125,
+          "height": 1186.7896728515625
+        }
+      }
+    }
+  ]
+}
