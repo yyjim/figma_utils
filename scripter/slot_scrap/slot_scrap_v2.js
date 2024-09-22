@@ -15,14 +15,6 @@ function Size(width, height) {
     this.height = height;
 }
 
-// function Rect(x, y, width, height) {
-// 		this.x = x
-// 		this.y = y
-// 		this.width = width
-// 		this.height = height
-//     this.center = new Point(x + width / 2.0, y + height / 2.0);
-// }
-
 class Rect {
   constructor(x, y, width, height) {
     this.x = x;
@@ -53,6 +45,15 @@ class Rect {
       height: this.height,
     };
   }
+
+	round(decimalPlaces) {
+		return new Rect(
+      parseFloat(this.x.toFixed(decimalPlaces)),
+      parseFloat(this.y.toFixed(decimalPlaces)),
+      parseFloat(this.width.toFixed(decimalPlaces)),
+      parseFloat(this.height.toFixed(decimalPlaces))
+    );
+  }
 }
 
 function Slot(rect, path) {
@@ -61,12 +62,12 @@ function Slot(rect, path) {
 }
 
 function normalizeRect(rect, size) {
-  return {
-    x: rect.x / size.width,
-    y: rect.y / size.height,
-    width: rect.width / size.width,
-    height: rect.height / size.height
-  };
+  return new Rect(
+    rect.x / size.width,
+    rect.y / size.height,
+    rect.width / size.width,
+    rect.height / size.height
+	);
 }
 
 function PhotoFrame(name, size, overlay, slot) {
@@ -123,20 +124,28 @@ function parsePath(data: string | null): string {
     return instructions.flatMap((instruction) => instruction).join(' ');
 }
 
+const frameName = "All";
+const allFrame = figma.currentPage.findChild(c => c.name == frameName) as FrameNode;
+print(allFrame.name);
 
-const layouts = figma.currentPage.children.filter(c => c.type === "COMPONENT") as ComponentNode[];
+const layouts = allFrame
+	.children
+	.filter(c => c.type === "FRAME") as FrameNode[];
 
 const photo_frames = layouts.map(layout => {
     const name = layout.name;
-    const frame = layout.findChild(c => c.name.includes("frame"))!;
-		print(frame.name);
-    const size = new Size(frame.width, frame.height);
+		print(name);
+
+		var layer = new Rect(0, 0, layout.width, layout.height);
+    const size = layer.size;
     const slotLayer = layout.findChild(c => c.name.includes("svg"))!;
     const slotRect = new Rect(
-			slotLayer.x - frame.x, 
-			slotLayer.y - frame.y, 
+			slotLayer.x - layer.x, 
+			slotLayer.y - layer.y, 
 			slotLayer.width, slotLayer.height
 		);
+
+		const decimalPlaces = 3;
     var path;
     switch slotLayer.type {
         case "VECTOR":
@@ -148,8 +157,8 @@ const photo_frames = layouts.map(layout => {
             break;
     }
 		const slot = {
-			"rect": slotRect,
-			"normalized_rect": normalizeRect(slotRect, size),
+			"rect": slotRect.round(decimalPlaces),
+			"normalized_rect": normalizeRect(slotRect, layer.size).round(decimalPlaces),
 			"path": path
 		}
 
@@ -157,21 +166,18 @@ const photo_frames = layouts.map(layout => {
 		const overlayLayer = layout.findChild(c => c.name.includes("frame"));
 		if (overlayLayer != null) {
 			const overlayLayerRect = new Rect(
-				overlayLayer.x - frame.x, 
-				overlayLayer.y - frame.y, 
+				overlayLayer.x - layer.x, 
+				overlayLayer.y - layer.y, 
 				overlayLayer.width, 
 				overlayLayer.height
 			);
 			overlay = {
-				"rect": overlayLayerRect,
-				"normalized_rect": normalizeRect(overlayLayerRect, size)
+				"rect": overlayLayerRect.round(decimalPlaces),
+				"normalized_rect": normalizeRect(overlayLayerRect, size).round(decimalPlaces)
 			}
 		}
-    return new PhotoFrame(name, size, removeEmpty(overlay), removeEmpty(slot));
+    return new PhotoFrame(name, size, overlay, removeEmpty(slot));
 });
-
-print(photo_frames);
-
 
 const json = JSON.stringify({ data: removeEmpty(photo_frames) }, null, 2);
 print(json);
